@@ -8,5 +8,5 @@ if ! [ -d "$dir" ]
                 exit 1
 fi
 
-find "$dir" \( -name "*.bak" -o -name "*.tmp" -o -name "*.backup" \) -delete
+find "$dir" \( -type f -name "*.bak" -o -type f -name "*.tmp" -o -type f -name "*.backup" \) -delete
 exit 0
